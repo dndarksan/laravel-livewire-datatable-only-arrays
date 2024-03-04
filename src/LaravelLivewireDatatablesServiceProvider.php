@@ -7,7 +7,7 @@ use Illuminate\Support\ServiceProvider;
 use Livewire\ComponentHookRegistry;
 use Dndarksan\LaravelLivewireDatatables\Commands\MakeCommand;
 
-class LaravelLivewireTablesServiceProvider extends ServiceProvider
+class LaravelLivewireDatatablesServiceProvider extends ServiceProvider
 {
     public function boot(): void
     {
