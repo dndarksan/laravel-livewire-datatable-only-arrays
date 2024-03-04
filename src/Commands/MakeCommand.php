@@ -4,9 +4,8 @@ namespace Dndarksan\LaravelLivewireDatatables\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
-use Livewire\Features\SupportConsoleCommands\Commands\ComponentParser;
-use Livewire\Features\SupportConsoleCommands\Commands\MakeCommand as LivewireMakeCommand;
-
+use Livewire\Commands\ComponentParser;
+use Livewire\Commands\MakeCommand as LivewireMakeCommand;
 class MakeCommand extends Command
 {
     protected ComponentParser $parser;
