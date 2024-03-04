@@ -2,7 +2,9 @@
 
 namespace [namespace];
 
-class [class] extends DtTable
+use Dndarksan\LaravelLivewireDatatables\DTComponent;
+
+class [class] extends DTComponent
 {
     public function encabezados(): array
     {
