@@ -1,0 +1,27 @@
+<?php
+
+namespace [namespace];
+
+class [class] extends DtTable
+{
+    public function encabezados(): array
+    {
+        return [
+            ['Columna 1','sorteable'=>true,'campo'=>'Columna1','searchable'=>true],
+        ];
+    }
+
+    public function columnas(): array
+    {
+        return [
+            ['Columna1','class'=>'text-center text-nowrap'],
+        ];
+    }
+
+    public function registros(): array
+    {
+        return [
+            ['Columna1'=>'Registro 1']
+        ];
+    }
+}
