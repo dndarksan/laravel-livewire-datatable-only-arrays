@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Livewire;
+namespace Dndarksan\LaravelLivewireDatatables;
 
 use Livewire\Component;
 

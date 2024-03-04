@@ -1,7 +1,11 @@
 <div wire:init='initFunc'>
     <div class="form-inline mb-2">
-        {!! Form::text('Buscar', null, ['class'=>'form-control mr-2','placeholder'=>'Buscar','wire:model.debounce.500ms'=>'buscar']) !!}
-        {!! Form::select('PorPagina',$aPorPagina,null,['class'=>'form-control ml-auto','wire:model'=>'porPagina']) !!}
+        <input type="text" name='buscar' class="form-control mr-2" placeholder="Buscar" wire:model.debounce.500ms='buscar'>
+        <select name="porPagina" class="form-control ml-auto" wire:model='porPagina'>
+            @foreach($aPorPagina as $kpp => $pp)
+                <option value="{{ $kpp }}">{{ $pp }}</option>
+            @endforeach
+        </select>
     </div>
     <x-livewire-dt-tables::table>
         <x-slot name="head">

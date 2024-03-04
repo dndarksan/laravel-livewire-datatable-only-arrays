@@ -6,7 +6,7 @@
 
 <td class="p-0">
     <div class="m-0 p-0 input-group">
-        {!! Form::text($wmodel, null, ['class'=>"form-control form-control-sm",'placeholder'=>$placeholder,'wire:model.debounce'=>"searchsInputs.$wmodel"]) !!}
+        <input type="text" name="{{ $wmodel }}" class="form-control form-control-sm" placeholder="{{ $placeholder }}" wire:model.debounce.500ms='{{ "searchsInputs.$wmodel" }}'>
         @if (isset($searchsInputs[$wmodel]) && strlen($searchsInputs[$wmodel]) > 0)
             <div class="input-group-append">
                 <button wire:click="$set('searchsInputs.{{ $wmodel }}', null)" class="btn btn-sm btn-outline-danger" type="button">
